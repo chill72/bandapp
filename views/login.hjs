@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+</head>
+<body id="login">
+    <h1>Pro Shop Players Login</h1>
+    <img src="/images/not_pro_shop_players.jpg">
+    <form action="/login" method="post" class="user">
+        <h3>Please Log In</h3>
+        <label>Email</label>
+        <input type="text" name="email" value="{{email}}">
+        <label>Password</label>
+        <input type="password" name="p">
+        <p class="message {{messageType}}">{{message}}</p>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>

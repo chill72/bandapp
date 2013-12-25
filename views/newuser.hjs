@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+</head>
+<body id="newuser">
+    <h1>Pro Shop Players</h1>
+    <img src="/images/not_pro_shop_players.jpg">
+    <form action="/newuser" method="post" class="user">
+        <h3>Create New User</h3>
+        <label>Email</label>
+        <input type="text" name="email">
+        <label>Name</label>
+        <input type="text" name="name" value="{{name}}">
+        <label>Password</label>
+        <input type="password" name="p">
+        <label>Admin</label>
+        <input type="checkbox" name="a" value="true">
+        <p class="message {{messageType}}">{{message}}</p>
+        <input type="submit" value="Create User">
+    </form>
+</body>
+</html>

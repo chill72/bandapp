@@ -1,0 +1,58 @@
+*{margin:0; padding:0; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
+html{font-family:Arial, sans-serif;}
+body{ width:980px; margin:0 auto; font-size:12px; color:#222;}
+
+ul{list-style:none;}
+
+.column{width:320px; float:left;}
+.column.middle{margin:0 10px;}
+.header{height:30px; padding:0 10px; line-height:30px; background-color:#003366; overflow:hidden;}
+.header h3{float:left; color:#FFF; font-size:16px;}
+.header button{float:right;}
+.header .toolbar{float:right;}
+.header .toolbar img{margin-left:5px; cursor:pointer;}
+
+#songs{position:relative;}
+#songs form{display:none; position:absolute; top:30px; width:100%; background-color:#dfe5f2;}
+#songs li{display:block; padding:5px 10px; font-weight:bold; cursor:pointer;}
+#songs li:nth-child(odd){background-color:#F0F0F0;}
+#songs li:nth-child(even){background-color:#FFF;}
+#songs li:hover{background-color:#dfe5f2;}
+#songs li.selected{color:#FFF; background-color:#555 !important; cursor:default;}
+
+form.song{padding:0 10px;}
+form.song label{display:block; padding-top:8px; font-size:12px; font-weight:bold;}
+form.song input, textarea{width:100%; resize:none;}
+form.song div.buttons{text-align:center; padding:0 0 12px;}
+form.song button{width:100px; margin:0 10px;}
+form.song .error{text-align:center; color:red; font-weight:bold; line-height:36px; height:36px;}
+
+#song_details{background-color:#F0F0F0;}
+#song_details h4{font-weight:bold;}
+#description, #video, #attachments, #comments{padding:0 10px; margin-top:10px;}
+
+#information img{width:100%;}
+#information p{margin:12px 0;}
+
+#attachments a{line-height:16px; text-decoration:none;}
+#attachments a img{vertical-align:middle; margin-right:3px;}
+
+#comments{padding-bottom:12px;}
+#comments li{font-size:11px; padding:12px 10px; border-width:1px 0 0 0; border-style:solid; border-color:#ccc;}
+#comments li span{font-weight:bold; color:#336699;}
+#comments button{margin-bottom:12px; font-size:10px;}
+
+#login h1{text-align:center; margin-top:20px;}
+#login img{display:block; margin:12px auto; width:320px;}
+#newuser h1{text-align:center; margin-top:20px;}
+#newuser img{display:block; margin:12px auto; width:320px;}
+form.user{width:320px; margin:0 auto; padding:0 0 12px 0; border:1px solid #CCC; overflow:hidden; background-color:#F0F0F0;}
+form.user h3{background-color:#003366; color:#FFF; font-size:16px; padding-left:10px;}
+form.user label{float:left; clear:left; width:68px; text-align:right; margin-right:4px; margin-top:12px;}
+form.user input[type='text'],form.user input[type='password']{float:left; width:234px; margin-top:12px;}
+form.user input[type='checkbox']{margin-top:12px;}
+form.user .message{clear:both; text-align:center; padding:12px 0;}
+form.user .message.success{color:green;}
+form.user .message.error{color:red;}
+form.user input[type='submit']{width:100px; margin:0 auto; display:block;}
+
