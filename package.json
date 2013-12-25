@@ -8,7 +8,7 @@
   "dependencies": {
     "express": "3.4.5",
     "hjs": "*",
-    "mongodb":"*"
+    "mongodb": "*"
   },
   "description": "my first node project. share songs and comments with your band.",
   "main": "app.js",
@@ -20,5 +20,13 @@
     "database"
   ],
   "author": "chris hill",
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chill72/bandapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chill72/bandapp/issues"
+  },
+  "homepage": "https://github.com/chill72/bandapp"
 }
