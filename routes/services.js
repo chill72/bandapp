@@ -51,7 +51,8 @@ exports.postComment = function(req, res){
         var newComment = {
             text:req.body.text,
             name:req.body.name,
-            songId:req.body.songId
+            songId:req.body.songId,
+            date: new Date()
         }
         collection.insert(newComment, {w:1}, function(err, result) {
             if(err) {
@@ -68,7 +69,7 @@ exports.getComments = function(req,res){
     var MongoClient = mongodb.MongoClient;
     MongoClient.connect("mongodb://mongolab_chill:DBpass567@ds053728.mongolab.com:53728/bandapp", function(err, db) {
         var comments = db.collection('comments');
-        comments.find({songId:req.body.songId}).toArray(function(err,commentItems){
+        comments.find({songId:req.body.songId}).sort({date:-1}).toArray(function(err,commentItems){
             if(err) {
                 return console.dir(err);
             }
